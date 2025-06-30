@@ -6,7 +6,15 @@ dotenv.config({
     path:'./env'
 })
 
-connectDB()
+connectDB()// give promises
+.then(()=>{
+  app.listen(process.env.PORT||8000,()=>{
+    console.log(`secver is running at port : ${process.env.PORT}`);
+  })
+})
+.catch((err)=>{
+  console.log("MONGO DB CONNECTION FAILDED !!!", err)
+})
 
 
 //approach one to connect database;
