@@ -1,4 +1,4 @@
-class ApiError extends Error{// ApiError class inherit all propof in built Error class of node.js
+class ApiError extends Error{// ApiError class inherit all prop of in built Error class of node.js
     constructor(
         statusCode,
         message="something went wrong",
