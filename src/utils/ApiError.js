@@ -3,7 +3,7 @@ class ApiError extends Error{// ApiError class inherit all prop of in built Erro
         statusCode,
         message="something went wrong",
         errors= [],
-        statck = ""
+        stack = ""
 
     ){
         super(message)
@@ -13,8 +13,8 @@ class ApiError extends Error{// ApiError class inherit all prop of in built Erro
         this.sucess = false;
         this.errors = errors
 
-        if(statck){
-            this.stack = statck
+        if(stack){
+            this.stack = stack
         }else{
             Error.captureStackTrace(thid,
                 this.constructor
