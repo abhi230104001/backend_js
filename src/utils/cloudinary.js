@@ -16,7 +16,8 @@ import fs from "fs"// fs is file system library from node js
                 resource_type:"auto"
             })
             // file uploaded successfull
-            console.log("file is uploade on cloudinary",response.url);
+            //console.log("file is uploade on cloudinary",response.url);
+            fs.unlinkSync(loaclFilePath)
             return response;
         }catch(error){
             fs.unlinkSync(loaclFilePath)/*remove the locallly
