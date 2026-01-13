@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 
-const app = express()
+export const app = express()
 
 /// app.use()=> use it when we have to do middlewaver or configuration settting
 app.use(cors({
