@@ -13,7 +13,7 @@ import {
     updateAccountDetails 
      } from "../controllers/user.controller.js";
 import {upload} from "../middlewares/multer.middleware.js"
-import { verifyJwt } from "../middlewares/auth.middleware.js";
+import { verifyJWt } from "../middlewares/auth.middleware.js";
 
 const router = Router()
 
