@@ -6,7 +6,7 @@ import {User} from "../models/user.model.js"
 
 
 
-export const verifyJWt = asyncHandler(async(req, _, next)=>{
+export const verifyJWT = asyncHandler(async(req, _, next)=>{
 
  
     
